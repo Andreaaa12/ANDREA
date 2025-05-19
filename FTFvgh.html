@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News: Online Gambling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #4b2e83, #ff6f61);
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 25px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-weight: 300;
+      margin-top: 5px;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      animation: fadeInUp 1.5s ease-out;
+    }
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #eee;
+    }
+    .typed-text {
+      color: #ffd700;
+      font-weight: bold;
+    }
+    .highlight {
+      color: #ffddc1;
+      font-weight: 600;
+    }
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffd700;
+      color: #4b2e83;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .floating-btn:hover {
+      background: #ffe580;
+    }
+    @keyframes fadeInDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>News: Online Gambling</h1>
+    <p>Written by <span class="typed-text"></span></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Thesis</h2>
+      <p>Online gambling has become a serious social issue in Indonesia. With easy access through the internet and mobile devices, more and more people, especially the younger generation, are getting involved in online gambling activities.</p>
+    </section>
+
+    <section>
+      <h2>Arguments</h2>
+      <p>One big reason why online gambling is spreading fast is because internet access is everywhere. Even children and teenagers can open gambling websites anytime. Many parents do not watch what their kids do online, making it easier for them to find these sites. Another cause is money problems. People want fast money, and they think gambling is the answer. Also, there is not enough education about the dangers of gambling, so people don't understand how risky and harmful it can be.</p>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>Online gambling is a real danger to young people and society. We all need to work together to stop it before it causes more harm and destroys the future of our nation.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong class="highlight">Name:</strong> Andrea Asafin | <strong class="highlight">Class:</strong> X-1
+  </footer>
+
+  <button class="floating-btn" onclick="scrollToTop()">⬆ Back to Top</button>
+
+  <script>
+    const options = {
+      strings: ['Andrea Asafin - X-1', 'News Writer', 'Student Against Gambling'],
+      typeSpeed: 55,
+      backSpeed: 35,
+      loop: true
+    };
+    const typed = new Typed('.typed-text', options);
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
